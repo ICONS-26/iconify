@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Coding & Technical Prep — ICONIFY</title>
+<meta name="theme-color" content="#1A0F26">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Space+Grotesk:wght@500;600;700&family=Fredoka:wght@500;600;700&family=Nunito:wght@400;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+  <div class="brand"><div class="logo">ICON<span>IFY</span></div><div class="sub">Placement Cell · NSSCE Palakkad</div></div>
+  <div class="nav-links" id="navLinks">
+    <a href="index.html" data-page="index.html">Home</a>
+    <a href="aptitude.html" data-page="aptitude.html">Aptitude</a>
+    <a href="coding.html" data-page="coding.html">Coding</a>
+    <a href="stats.html" data-page="stats.html">Placements</a>
+    <a href="resources.html" data-page="resources.html">Resources</a>
+  </div>
+  <div class="nav-right">
+    <button class="icon-btn" id="themeToggleBtn" aria-label="Toggle Theme">🌓</button>
+    <button class="icon-btn nav-toggle" id="navToggle" aria-label="Toggle Menu">☰</button>
+  </div>
+</nav>
+
+<div class="page-hero">
+  <span class="eyebrow reveal">Prep Zone · 02</span>
+  <h1 class="reveal delay-1">Coding & Technical Prep</h1>
+  <p class="reveal delay-1">A structured Data Structures & Algorithms roadmap, a curated practice list, and the core CS subjects that show up in every technical interview.</p>
+</div>
+
+<!-- DSA ROADMAP -->
+<section class="section" style="padding-top:20px;">
+  <h2 class="section-title reveal" style="font-size:1.6rem;">DSA Roadmap</h2>
+  <p class="section-sub reveal" style="margin-bottom:30px;">Work through these topics roughly in order — each builds on the last.</p>
+
+  <div class="grid cols-3">
+    <div class="topic-card reveal"><h4>1️⃣ Arrays & Strings</h4><ul><li>Two pointers & sliding window</li><li>Prefix sums</li><li>Sorting & searching</li></ul></div>
+    <div class="topic-card reveal delay-1"><h4>2️⃣ Linked Lists</h4><ul><li>Reversal & cycle detection</li><li>Merge & sort operations</li><li>Fast & slow pointers</li></ul></div>
+    <div class="topic-card reveal delay-2"><h4>3️⃣ Stacks & Queues</h4><ul><li>Monotonic stack</li><li>Circular queue</li><li>Next greater element</li></ul></div>
+    <div class="topic-card reveal"><h4>4️⃣ Trees & BSTs</h4><ul><li>Traversals (in/pre/post)</li><li>Height, diameter, LCA</li><li>Binary search tree ops</li></ul></div>
+    <div class="topic-card reveal delay-1"><h4>5️⃣ Graphs</h4><ul><li>BFS & DFS</li><li>Shortest path (Dijkstra)</li><li>Union-Find, topological sort</li></ul></div>
+    <div class="topic-card reveal delay-2"><h4>6️⃣ Dynamic Programming</h4><ul><li>1D & 2D DP patterns</li><li>Knapsack variants</li><li>DP on strings</li></ul></div>
+  </div>
+</section>
+
+<!-- QUESTION LIST -->
+<section class="section" style="padding-top:10px;">
+  <div class="eyebrow reveal">Curated list</div>
+  <h2 class="section-title reveal delay-1">Practice Questions</h2>
+  <p class="section-sub reveal delay-1" style="margin-bottom:26px;">Search these titles on LeetCode / GeeksforGeeks to solve them — links intentionally left for you to attach your team's preferred judge.</p>
+
+  <div class="reveal">
+    <div class="qa-card">
+      <div class="qa-top"><p class="qa-q"><b>1.</b> Two Sum — find indices of two numbers in an array that add up to a target.</p><span class="badge easy">Easy · Arrays</span></div>
+    </div>
+    <div class="qa-card">
+      <div class="qa-top"><p class="qa-q"><b>2.</b> Reverse a Linked List — both iterative and recursive approaches.</p><span class="badge easy">Easy · Linked List</span></div>
+    </div>
+    <div class="qa-card">
+      <div class="qa-top"><p class="qa-q"><b>3.</b> Valid Parentheses — check if brackets in a string are balanced using a stack.</p><span class="badge easy">Easy · Stack</span></div>
+    </div>
+    <div class="qa-card">
+      <div class="qa-top"><p class="qa-q"><b>4.</b> Lowest Common Ancestor of a Binary Tree.</p><span class="badge medium">Medium · Trees</span></div>
+    </div>
+    <div class="qa-card">
+      <div class="qa-top"><p class="qa-q"><b>5.</b> Number of Islands — count connected components in a grid using BFS/DFS.</p><span class="badge medium">Medium · Graphs</span></div>
+    </div>
+    <div class="qa-card">
+      <div class="qa-top"><p class="qa-q"><b>6.</b> Longest Common Subsequence between two strings.</p><span class="badge medium">Medium · DP</span></div>
+    </div>
+    <div class="qa-card">
+      <div class="qa-top"><p class="qa-q"><b>7.</b> Merge K Sorted Lists using a min-heap.</p><span class="badge hard">Hard · Heap</span></div>
+    </div>
+    <div class="qa-card">
+      <div class="qa-top"><p class="qa-q"><b>8.</b> Word Ladder — shortest transformation sequence via BFS.</p><span class="badge hard">Hard · Graphs</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- CORE SUBJECTS CHECKLIST -->
+<section class="section" style="padding-top:0;">
+  <div class="eyebrow reveal">Don't skip these</div>
+  <h2 class="section-title reveal delay-1">Core CS Subject Checklist</h2>
+  <p class="section-sub reveal delay-1" style="margin-bottom:26px;">Tick off each topic as you revise it — most technical interviews probe at least one question from each area.</p>
+
+  <div class="checklist reveal">
+    <label class="check-row"><input type="checkbox"><span><b>OOP</b> — classes, inheritance, polymorphism, encapsulation, abstraction</span></label>
+    <label class="check-row"><input type="checkbox"><span><b>DBMS</b> — normalization, joins, indexing, transactions & ACID</span></label>
+    <label class="check-row"><input type="checkbox"><span><b>Operating Systems</b> — processes vs threads, scheduling, deadlocks, memory management</span></label>
+    <label class="check-row"><input type="checkbox"><span><b>Computer Networks</b> — OSI/TCP-IP model, DNS, HTTP(S), TCP vs UDP</span></label>
+    <label class="check-row"><input type="checkbox"><span><b>System Design Basics</b> — scalability, load balancing, caching, database sharding</span></label>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <div class="logo">ICONIFY</div>
+      <p>ICONIFY is the placement preparation initiative by ICONS, Department of Instrumentation & Control Engineering, NSS College of Engineering, Palakkad.</p>
+    </div>
+    <div class="footer-links">
+      <div class="footer-col">
+        <h5>Prep Zones</h5>
+        <a href="aptitude.html">Aptitude</a>
+        <a href="coding.html">Coding</a>
+        <a href="stats.html">Placements</a>
+        <a href="resources.html">Resources</a>
+      </div>
+      <div class="footer-col">
+        <h5>Contact</h5>
+        <p>placementcell@nssce.example</p>
+        <p>NSSCE Palakkad, Kerala</p>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">ICONIFY · Built with 💛 by ICONS · NSSCE Palakkad</div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
