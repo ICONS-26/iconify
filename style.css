@@ -144,6 +144,38 @@ nav {
   .nav-toggle { display: flex; }
 }
 
+/* ===== MARQUEE ===== */
+.marquee {
+  position: sticky; top: 73px; z-index: 400; overflow: hidden;
+  background: var(--glass-bg); border-bottom: 1px solid var(--glass-border);
+  backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px);
+  padding: 6px 0;
+}
+.marquee-track { display: flex; width: max-content; animation: marqueeScroll 18s linear infinite; }
+.marquee-track span {
+  font-family: 'Bebas Neue', system-ui, sans-serif; font-weight: 400; text-transform: uppercase;
+  font-size: 0.78rem; letter-spacing: 0.08em; color: var(--ink-dim); white-space: nowrap; padding: 0 18px;
+  display: flex; align-items: center; gap: 18px;
+}
+.marquee-track span::after { content: "◆"; color: var(--magenta); font-size: 0.5rem; margin-left: 18px; }
+@keyframes marqueeScroll { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+@media (prefers-reduced-motion: reduce) { .marquee-track { animation: none; } }
+
+/* ===== DEPARTMENT HERO BANNER (image-backed) ===== */
+.dept-hero-banner {
+  position: relative; z-index: 2; overflow: hidden;
+  background-size: cover; background-position: center; background-repeat: no-repeat;
+}
+.dept-hero-banner::before {
+  content: ""; position: absolute; inset: 0; z-index: 0;
+  background: linear-gradient(180deg, transparent 0%, transparent 82%, var(--bg-main) 100%);
+}
+.dept-hero-banner .page-hero, .dept-hero-banner .section { position: relative; z-index: 1; }
+.dept-hero-banner .page-hero .eyebrow { color: #FFF; text-shadow: 0 2px 10px rgba(0,0,0,0.75); }
+.dept-hero-banner .page-hero .eyebrow::before { color: var(--magenta); text-shadow: 0 2px 10px rgba(0,0,0,0.75); }
+.dept-hero-banner .page-hero h1 { color: #FFF; text-shadow: 0 3px 18px rgba(0,0,0,0.8); }
+.dept-hero-banner .page-hero p { color: #F0EEF7; font-weight: 700; text-shadow: 0 2px 12px rgba(0,0,0,0.85), 0 1px 3px rgba(0,0,0,0.9); }
+
 /* ===== PAGE HERO (sub-pages) ===== */
 .page-hero { padding: 70px 24px 40px; max-width: 1160px; margin: 0 auto; position: relative; z-index: 2; }
 .page-hero .eyebrow { display: block; margin-bottom: 10px; }
