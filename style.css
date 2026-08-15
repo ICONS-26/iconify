@@ -237,6 +237,18 @@ nav {
 .event-info p { color: var(--ink-dim); font-size: 0.87rem; }
 .event-tag { margin-left: auto; font-family: 'JetBrains Mono', monospace; font-size: 0.65rem; letter-spacing: 0.08em; text-transform: uppercase; background: rgba(255,46,156,0.15); color: var(--magenta); padding: 5px 12px; border: 1px solid rgba(255,46,156,0.35); white-space: nowrap; }
 
+/* ===== YouTube channel cards ===== */
+.yt-card {
+  display: flex; flex-direction: column; align-items: center; text-align: center; gap: 10px;
+  background: var(--bg-card); border: 1px solid var(--glass-border); padding: 30px 20px;
+  box-shadow: var(--shadow-card); clip-path: polygon(14px 0, 100% 0, 100% calc(100% - 14px), calc(100% - 14px) 100%, 0 100%, 0 14px);
+  transition: transform .25s cubic-bezier(.22,1,.36,1), border-color .2s ease, box-shadow .2s ease;
+}
+.yt-card:hover { transform: translateY(-6px); border-color: var(--cyan); box-shadow: 0 0 40px -10px rgba(34,229,255,0.45); }
+.yt-avatar { width: 76px; height: 76px; border-radius: 50%; object-fit: cover; border: 2px solid var(--glass-border); }
+.yt-card h3 { font-family: 'Space Grotesk', system-ui, sans-serif; font-weight: 700; font-size: 1.05rem; color: var(--cream); }
+.yt-card .go { font-family: 'JetBrains Mono', monospace; font-size: 0.75rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--magenta); }
+
 /* ===== Testimonials ===== */
 .testi-card { background: var(--bg-card); border: 1px solid var(--glass-border); padding: 26px; box-shadow: var(--shadow-card); clip-path: polygon(16px 0, 100% 0, 100% calc(100% - 16px), calc(100% - 16px) 100%, 0 100%, 0 16px); }
 .testi-card p.quote { color: var(--ink); font-size: 0.98rem; line-height: 1.7; margin-bottom: 16px; }
@@ -324,4 +336,5 @@ footer { border-top: 1px solid var(--glass-border); padding: 50px 24px 30px; pos
 .footer-col h5 { font-family: 'JetBrains Mono', monospace; font-size: 0.7rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--cyan); margin-bottom: 12px; }
 .footer-col a, .footer-col p { display: block; color: var(--ink-dim); font-size: 0.88rem; margin-bottom: 8px; }
 .footer-col a:hover { color: var(--ink); }
+.footer-col .footer-logo { width: 140px; height: auto; object-fit: contain; margin-bottom: 8px; }
 .footer-bottom { max-width: 1160px; margin: 30px auto 0; padding-top: 20px; border-top: 1px solid var(--glass-border); color: var(--ink-dim); font-size: 0.8rem; text-align: center; font-family: 'JetBrains Mono', monospace; }
