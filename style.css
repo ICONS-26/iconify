@@ -301,14 +301,6 @@ nav {
 .company-pill { background: var(--bg-card); border: 1px solid var(--glass-border); padding: 16px; text-align: center; font-family: 'Space Grotesk', system-ui, sans-serif; font-weight: 700; color: var(--ink); font-size: 0.92rem; text-transform: uppercase; letter-spacing: 0.01em; transition: transform .2s ease, border-color .2s ease; }
 .company-pill:hover { transform: translateY(-3px); border-color: var(--cyan); }
 
-/* ===== Bar chart (CSS only) ===== */
-.bar-chart { display: flex; align-items: flex-end; gap: 16px; height: 220px; padding: 20px 10px 0; }
-.bar-col { flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: flex-end; gap: 8px; height: 100%; }
-.bar-fill { width: 100%; max-width: 46px; background: linear-gradient(180deg, var(--cyan), var(--magenta)); transition: height 1s cubic-bezier(.22,1,.36,1); clip-path: polygon(0 8px, 8px 0, 100% 0, 100% 100%, 0 100%); }
-.bar-val { font-family: 'JetBrains Mono', monospace; font-size: 0.72rem; color: var(--ink-dim); }
-.bar-yr { font-size: 0.78rem; color: var(--ink-dim); font-weight: 700; }
-
-/* Stat cards (static, no animation) */
 .stat-card { background: var(--glass-bg); border: 1px solid var(--glass-border); padding: 26px 20px; text-align: center; backdrop-filter: blur(10px); box-shadow: var(--shadow-card); clip-path: polygon(14px 0, 100% 0, 100% calc(100% - 14px), calc(100% - 14px) 100%, 0 100%, 0 14px); }
 .stat-num { font-family: 'Bebas Neue', system-ui, sans-serif; font-weight: 400; font-size: clamp(1.9rem, 4vw, 2.6rem); background: linear-gradient(135deg, var(--cyan), var(--magenta)); -webkit-background-clip: text; background-clip: text; color: transparent; }
 .stat-lbl { color: var(--ink-dim); font-size: 0.85rem; margin-top: 6px; font-weight: 600; }
